@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Odd or even</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+ <div id="design">
+    <h1>ODD and EVEN in javascript</h1>
+    <label for="odd_even">ODD or EVEN !!!</label>
+    <input type="number" id="odd_even">
+    <button id="result" onclick="number()">Submit</button>
+    <button id="reset">Reset</button>
+    <h2 id="show_msg"></h2> 
+
+    <script>
+       function number(){
+          var num = document.getElementById('odd_even').value;
+           
+          document.getElementById('result').innerHTML= 'Result'
+          document.getElementById('result').style.color= 'red'
+           if((num % 2) === 0){
+            document.getElementById('show_msg').innerHTML='This number   ' +num+ '   is an EVEN number';
+            document.getElementById('show_msg').style.color='green'
+           }else{
+            document.getElementById('show_msg').innerHTML='This number   ' +num+ '   is a ODD number';
+            document.getElementById('show_msg').style.color='red'
+            
+
+           }
+        
+
+       }
+
+
+
+    </script>
+ </div>
+</body>
+</html>
